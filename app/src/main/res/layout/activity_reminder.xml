@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/widgetMarginMedium"
+    android:orientation="vertical"
+    tools:context=".ReminderActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/widgetMarginMedium"
+        android:hint="Nama Obat">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_dosis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/widgetMarginMedium"
+        android:hint="Dosis Obat">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_dosis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:id="@+id/til_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/widgetMarginMedium"
+        android:hint="Status Minum Obat">
+
+        <AutoCompleteTextView
+            android:id="@+id/et_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_waktu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Waktu Minum Obat" />
+
+    <TextView
+        android:id="@+id/tv_waktu"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:textColor="?attr/colorError"
+        android:layout_marginBottom="@dimen/widgetMarginSmall" />
+
+    <Button
+        android:id="@+id/btn_tanggal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tanggal Minum Obat" />
+
+    <TextView
+        android:id="@+id/tv_tanggal"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:textColor="?attr/colorError"
+        android:visibility="gone"
+        android:layout_marginBottom="@dimen/widgetMarginLarge" />
+
+    <Button
+        android:id="@+id/btn_simpan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/widgetMarginLarge"
+        android:text="Simpan" />
+</LinearLayout>

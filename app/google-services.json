@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "593883564466",
+    "project_id": "ingat-obat-4b6e3",
+    "storage_bucket": "ingat-obat-4b6e3.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:593883564466:android:364008dab20e3625d77cab",
+        "android_client_info": {
+          "package_name": "com.ingat.obat"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCq9GLwdG85vA2eN6YjISUvJb9EaybNZCU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
